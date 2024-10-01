@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrtkostenrechner02</title>
+
+    <!--CSS einbinden-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>Fahrtkostenrechner02</h2>
+    <br>
+    <p>Berechne die Reisekosten für deinen nächsten Trip</p>
+    <br>
+    <p>
+        <label>Gesamtstreckenlänge in KM: </label>
+        <br>
+        <input type="number" id="strecke" value="0">
+    </p>
+    <br>
+    <p>
+        <label>Kraftstoffpreis in EUR/L: </label>
+        <br>
+        <input type="number" id="preis" value="0"
+    </p>
+    <br>
+    <p>
+        <label>Durchschnittsverbrauch <br> des PKW in L/100km: </label>
+        <br>
+        <input type="number" id="verbrauch" value="0">
+    </p>
+    <br>
+
+    <button type="button" onclick="berechnen()" id="berechnen">Kosten berechnen</button>
+    <button type="button" onclick="zuruecksetzen()" id="zuruecksetzen">Zurücksetzen</button>
+
+    <br>
+    <p>Ergebnis: </p>
+    <p id="output"></p>
+
+    <!--JS einbinden-->
+    <script src="main.js"></script>
+
+</body>
+</html>
